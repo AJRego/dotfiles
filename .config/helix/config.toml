@@ -1,0 +1,82 @@
+theme = "transparent_background_theme"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+true-color = true
+auto-format = false
+# end-of-line-diagnostics = "hint" 
+
+# v25.01+
+# [editor.inline-diagnostics]
+# cursor-line = "error"
+# other-lines = "disable"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+hidden = false
+git-global = false
+
+# [editor.whitespace.render]
+# space = "all"
+# tab = "all"
+# newline = "none"
+
+# [editor.whitespace.characters]
+# space = "·"
+# nbsp = "⍽"
+# tab = "→"
+# newline = "⏎"
+# tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "┊" # "▏", "┆", "┊", "⸽"
+# skip-levels = 1
+
+[editor.statusline]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+left = ["mode", "spinner", "diagnostics"]
+# left = ["mode", "spinner", "version-control", "file-name"]
+center = ["file-name"]
+right = ["version-control", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
+[editor.lsp]
+auto-signature-help = false
+display-inlay-hints = true
+display-messages = true
+
+[keys.normal]
+pageup = "half_page_up"
+pagedown = "half_page_down"
+# C-j = "signature_help"
+C-s = ":w"
+C-l = ":bcloseother"
+# C-r = ":config-reload"
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+esc = ["collapse_selection", "keep_primary_selection"]
+tab = "goto_next_function"
+S-tab = "goto_prev_function"
+X = ["extend_line_up", "extend_to_line_bounds"]
+# H = "goto_previous_buffer"
+# L = "goto_next_buffer"
+# space.x = ":toggle whitespace.render all none"
+space."." = "file_picker_in_current_buffer_directory"
+
+[keys.insert]
+C-s = [":w", "normal_mode"]
+
+# [editor.gutters]
+# layout = ["diff", "diagnostics", "line-numbers", "spacer"]

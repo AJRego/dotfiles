@@ -1,0 +1,14 @@
+# inherits = "rose_pine_moon"
+# inherits = "catppuccin_macchiato"
+inherits = "melange"
+# inherits = "tokyonight_storm"
+# inherits = "nord-night"
+# inherits = "everforest_dark"
+
+"ui.background" = {}
+"ui.popup" = {}
+"ui.popup.info" = {}
+"ui.bufferline.background" = {}
+"ui.statusline" = {}
+"ui.text" = {}
+"ui.menu" = {}

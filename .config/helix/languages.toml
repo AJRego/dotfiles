@@ -78,3 +78,7 @@ name = "css"
 language-servers = [ "vscode-css-language-server", "emmet-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = false
+
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}

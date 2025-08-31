@@ -1,3 +1,4 @@
+
 # enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # enitialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -84,9 +85,9 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # shell integrations
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
+# eval "$(zoxide init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
 
 # bun completions
 [ -s "/home/ajrego/.bun/_bun" ] && source "/home/ajrego/.bun/_bun"

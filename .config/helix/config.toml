@@ -5,12 +5,11 @@ line-number = "relative"
 bufferline = "multiple"
 true-color = true
 auto-format = false
-# end-of-line-diagnostics = "hint" 
+end-of-line-diagnostics = "hint" 
 
-# v25.01+
-# [editor.inline-diagnostics]
-# cursor-line = "error"
-# other-lines = "disable"
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "disable"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -39,7 +38,7 @@ git-global = false
 [editor.indent-guides]
 render = true
 character = "┊" # "▏", "┆", "┊", "⸽"
-# skip-levels = 1
+skip-levels = 1
 
 [editor.statusline]
 separator = "│"
@@ -62,8 +61,8 @@ pagedown = "half_page_down"
 # C-j = "signature_help"
 C-s = ":w"
 C-l = ":bcloseother"
-# C-r = ":config-reload"
-C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+C-r = ":config-reload"
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"] # :reload-all
 A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 esc = ["collapse_selection", "keep_primary_selection"]

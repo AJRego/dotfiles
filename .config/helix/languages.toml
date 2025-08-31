@@ -2,11 +2,15 @@
 name = "vue"
 auto-format = false
 formatter = { command = "prettier", args = ["--parser", "vue"] }
-language-servers = ["typescript-language-server"]
+language-servers = [ "vue-language-server", "eslint" ]
+
+[language-server.vue-language-server]
+command = "vue-language-server"
+args = ["--stdio"]
 
 [[language-server.typescript-language-server.config.plugins]]
 name = "@vue/typescript-plugin"
-location = "/home/ajrego/.nvm/versions/node/v18.20.4/bin/@vue-language-server"
+location = "/home/ajrego/.nvm/versions/node/v20.19.4/bin/@vue-language-server"
 languages = ["vue"]
 
 [language-server.eslint]
@@ -81,4 +85,4 @@ auto-format = false
 
 [[language]]
 name = "markdown"
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
+formatter = { command = "prettier", args = ["--parser", "markdown"] }

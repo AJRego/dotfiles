@@ -63,8 +63,9 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# aliases
-[[ -f ~/aliases.zsh ]] && source ~/aliases.zsh
+for file in ~/.zsh/*.zsh; do
+  source "$file"
+done
 
 export PATH=$PATH:/snap/bin
 export PATH="$HOME/.local/bin:$PATH"

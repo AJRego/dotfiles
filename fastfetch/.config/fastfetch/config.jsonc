@@ -3,6 +3,9 @@
   "logo": {
     "source": "~/.config/fastfetch/ascii.txt"
   },
+  "display": {
+    "separator": " › "
+  },
   "modules": [
     "title",
     "separator",

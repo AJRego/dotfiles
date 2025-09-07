@@ -28,12 +28,12 @@
       "key": "Memory",
       "format": "{used} / {total}"
     },
-    {
-      "type": "disk",
-      "key": "Disk",
-      "folders": "/mnt/c",
-      "format": "{size-used} / {size-total}"
-    },
+    // {
+    //   "type": "disk",
+    //   "key": "Disk",
+    //   "folders": "/mnt/c",
+    //   "format": "{size-used} / {size-total}"
+    // },
     "colors"
   ]
 }

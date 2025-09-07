@@ -4,6 +4,12 @@
     "source": "~/.config/fastfetch/ascii.txt"
   },
   "display": {
+    "color": {
+      "title": "#eb6f92",
+      "keys": "#9ccfd8",
+      "output":"#e0def4",
+      "separator": "#31748f"
+    },
     "separator": " › "
   },
   "modules": [

@@ -40,6 +40,9 @@
     //   "folders": "/mnt/c",
     //   "format": "{size-used} / {size-total}"
     // },
-    "colors"
+    {
+      "type": "colors",
+      "symbol": "circle",
+    }
   ]
 }

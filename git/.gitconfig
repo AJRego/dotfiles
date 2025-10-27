@@ -20,5 +20,6 @@
 	hi = log --pretty=format:'%C(yellow)%h%Creset %ad | %Cgreen%s%Creset %Cred%d%Creset [%Cblue%an%Creset]' --date=short --graph --decorate
 [core]
 	autocrlf = true
+	editor = hx
 [url "https://"]
 	insteadOf = git://

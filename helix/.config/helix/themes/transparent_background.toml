@@ -6,11 +6,14 @@ inherits = "melange"
 # inherits = "gruvbox_dark_hard"
 # inherits = "test"
 
-"ui.background" = {}
-"ui.popup" = {}
-"ui.popup.info" = {}
-"ui.bufferline.background" = {}
-"ui.bufferline" = { }
-"ui.statusline" = {}
-"ui.text" = {}
-"ui.menu" = {}
+"ui.background" = { bg = "none" }
+"ui.popup" = { bg = "none" }
+"ui.popup.info" = { bg = "none" }
+"ui.bufferline.background" = { bg = "none" }
+"ui.bufferline" = { bg = "none" }
+"ui.statusline" = { bg = "none" }
+"ui.text" = { bg = "none" }
+"ui.menu" = { bg = "none" }
+
+# "ui.gutter" = { bg = "none" }
+# "ui.linenr" = { bg = "none" }

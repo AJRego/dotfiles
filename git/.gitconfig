@@ -8,6 +8,7 @@
 	co = checkout
 	br = branch --sort=-committerdate
 	a = add
+	r = remove
 	c = commit
 	lg = log --oneline --decorate --all --graph
 	cob = checkout -b
@@ -20,6 +21,7 @@
 	push = !git push origin `git branch --show-current`
 	pull = !git pull origin `git branch --show-current`
 	hi = log --pretty=format:'%C(yellow)%h%Creset %ad | %Cgreen%s%Creset %Cred%d%Creset [%Cblue%an%Creset]' --date=short --graph --decorate
+
 [core]
 	autocrlf = true
 	editor = hx

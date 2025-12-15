@@ -8,11 +8,6 @@ language-servers = [ "vue-language-server", "eslint" ]
 command = "vue-language-server"
 args = ["--stdio"]
 
-[[language-server.typescript-language-server.config.plugins]]
-name = "@vue/typescript-plugin"
-location = "/home/ajrego/.nvm/versions/node/v20.19.4/bin/@vue-language-server"
-languages = ["vue"]
-
 [language-server.eslint]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]

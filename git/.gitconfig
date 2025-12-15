@@ -25,5 +25,20 @@
 [core]
 	autocrlf = true
 	editor = hx
-[url "https://"]
-	insteadOf = git://
+
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+
+[init]
+	defaultBranch = master
+
+[url "git@github.com:ajrego/"]
+	insteadOf = "me:"
+[url "git@github.com:"]
+	insteadOf = "gh:"
+[url "git@gitlab.com:"]
+	insteadOf = "gl:"
+[url "git@git.assureforlife.com:assure-apps/"]
+	insteadOf = "assure:"

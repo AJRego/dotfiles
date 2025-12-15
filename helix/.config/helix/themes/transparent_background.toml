@@ -1,10 +1,9 @@
-inherits = "melange"
+# inherits = "melange"
 # inherits = "rose_pine_moon"
 # inherits = "catppuccin_macchiato"
 # inherits = "tokyonight"
-# inherits = "nord-night"
+inherits = "nord"
 # inherits = "gruvbox_dark_hard"
-# inherits = "test"
 
 "ui.background" = { bg = "none" }
 "ui.popup" = { bg = "none" }

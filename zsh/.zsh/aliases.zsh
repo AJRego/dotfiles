@@ -8,6 +8,7 @@ alias g='git'
 alias h='hx'
 alias b='cd ..'
 alias lg='lazygit'
+# pokeget skitty -s --hide-name > ~/.config/fastfetch/ascii.txt
 alias ff='fastfetch'
 alias s='spf'
 alias j='just'

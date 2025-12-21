@@ -10,6 +10,8 @@ Focused on minimalism, performance, and a consistent **Nord** color palette
 
 ![Editor](assets/editor.png)
 
+![Git](assets/git.png)
+
 ## Setup
 
 Configurations are managed via gnu stow + git

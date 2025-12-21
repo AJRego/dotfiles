@@ -1,19 +1,37 @@
-# 🗂️ Dotfiles
+# Dotfiles
 
-Minimal setup for **WSL2 (Ubuntu 22.04.5 LTS)** on **Windows 11**.  
-Currently includes configs for **Zsh**, **Helix**, **Git**, and **Lazygit** — all tuned to a Rosé Pine theme and a clean workflow.  
+A configured environment for **WSL2 (Ubuntu 22.04 LTS)** on **Windows 11**
 
-## Usage
+Focused on minimalism, performance, and a consistent **Nord** color palette
+
+## Preview
+
+![Terminal Workflow](assets/terminal.png)
+
+![Editor](assets/editor.png)
+
+## Setup
+
+Configurations are managed via gnu stow + git
 
 ```sh
-git clone https://github.com/<your-username>/dotfiles.git ~/.dotfiles
+# clone repository
+git clone https://github.com/ajrego/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-stow */
-````
+
+# link configurations
+stow zsh
+stow git
+stow helix
+stow just
+stow fastfetch
+stow lazygit
+```
+
+## Workflow
+
+Includes a `justfile` to automate common tasks and shortcuts for my daily workflow
 
 ## Status
 
-⚡ Work in progress — more configs, tools, and tweaks will be added over time.
-The goal is to keep everything **minimal, extensible, and consistent**.
-
-
+Active work in progress. Optimizing for a fullstack development workflow on WSL

@@ -5,10 +5,10 @@
   },
   "display": {
     "color": {
-      "title": "#eb6f92",
-      "keys": "#9ccfd8",
-      "output":"#e0def4",
-      "separator": "#31748f"
+      "title": "#8FBCBB",
+      "keys": "#88C0D0",
+      "output": "#E5E9F0",
+      "separator": "#81A1C1"
     },
     "separator": " › "
   },

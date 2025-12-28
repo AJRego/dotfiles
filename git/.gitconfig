@@ -34,6 +34,12 @@
 [init]
 	defaultBranch = master
 
+[branch]
+	sort = -committerdate
+
+[diff]
+	algorithm = histogram
+
 [url "git@github.com:ajrego/"]
 	insteadOf = "me:"
 [url "git@github.com:"]

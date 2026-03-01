@@ -1,10 +1,5 @@
 
-# enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# enitialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+
 
 # set the directory to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -18,8 +13,7 @@ fi
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 
 # add in zsh plugins
 # zinit light zsh-users/zsh-syntax-highlighting
@@ -32,9 +26,7 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 
 # keybindings
 bindkey -e
@@ -79,21 +71,21 @@ source <(fzf --zsh)
 eval "$(zoxide init --cmd cd zsh)"
 
 # bun completions
-[ -s "/home/ajrego/.bun/_bun" ] && source "/home/ajrego/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # fnm
-FNM_PATH="/home/ajrego/.local/share/fnm"
+FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
 
 # pnpm
-export PNPM_HOME="/home/ajrego/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -108,3 +100,8 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --color=fg+:#e5e9f0,bg+:#2E3440,hl+:#81a1c1
     --color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac
     --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
+
+eval "$(starship init zsh)"

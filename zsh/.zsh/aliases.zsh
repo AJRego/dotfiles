@@ -16,3 +16,5 @@ alias j='just'
 alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias reload='exec zsh'
 alias usage='du -h --max-depth=1 | sort -h'
+alias bat=batcat
+alias oc=opencode

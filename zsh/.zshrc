@@ -1,4 +1,5 @@
-
+export EDITOR="hx"
+export VISUAL="hx"
 
 
 # set the directory to store zinit and plugins

@@ -25,6 +25,10 @@ zinit light zsh-users/zsh-completions
 # load completions
 autoload -Uz compinit && compinit
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^b^e' edit-command-line
+
 zinit cdreplay -q
 
 

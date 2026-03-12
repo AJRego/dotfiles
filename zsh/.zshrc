@@ -65,3 +65,5 @@ done
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
+
+precmd() print -Pn "\e]2;%~\a"
